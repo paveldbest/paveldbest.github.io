@@ -102,7 +102,7 @@
 <meta property="og:site_name" content="相逢是缘">
 <meta property="og:description" content="单片机延时程序分析结合静态数码管显示">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-07-25T14:19:18.411Z">
+<meta property="og:updated_time" content="2018-07-30T03:03:58.379Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="单片机延时程序学习">
 <meta name="twitter:description" content="单片机延时程序分析结合静态数码管显示">
@@ -302,7 +302,7 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-07-20T13:42:39+10:00">
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-07-20T13:42:39+08:00">
                 2018-07-20
               </time>
             
@@ -372,7 +372,7 @@
                   <span class="post-meta-item-text">Words count in article</span>
                 
                 <span title="Words count in article">
-                  408
+                  410
                 </span>
               
 
@@ -401,7 +401,7 @@
 <p>因为最近在学习开发板，涉及到静态数码管的时候发现延时程序在单片机里用处挺大的，所以决定一边学一边写一点。</p>
 <p>###想法<br>静态数码管依次显示0-F，中间间隔1s</p>
 <p>###问题<br>网上查找到的方法是使用三个for loop</p>
-<figure class="highlight plain"><figcaption><span>delay(void)</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    unsigned char i, j, k;</span><br><span class="line"></span><br><span class="line">    for (i=0; i&lt;100; i++)</span><br><span class="line">        for (j=0; j&lt;100; j++)</span><br><span class="line">            for (k=0; k&lt;20; k++);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">void delay(void)</span><br><span class="line">&#123;</span><br><span class="line">    unsigned char i, j, k;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> (<span class="attribute">i</span>=0; i&lt;100; i++)</span><br><span class="line">        <span class="keyword">for</span> (<span class="attribute">j</span>=0; j&lt;100; j++)</span><br><span class="line">            <span class="keyword">for</span> (<span class="attribute">k</span>=0; k&lt;20; k++);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>不考虑是否中间间隔时间是精准的前提下，数码管显示正常，大约在0.5s左右</p>
 <p>但是，在C中应该可以用<br><code>for (i = 0; i&lt;100*100*20; i++);</code><br>来取代三个 for loop。经过试验，数码管无法正常显示，所有的led常亮，推测是led点亮周期太短。</p>
 <p>修改上面的 for loop 使用<code>i&lt;100*100*2000</code>，数码管显示正常</p>
@@ -437,8 +437,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/05/30/template/" rel="next" title="template page">
-                <i class="fa fa-chevron-left"></i> template page
+              <a href="/2018/05/11/life-updates/" rel="next" title="Life updates">
+                <i class="fa fa-chevron-left"></i> Life updates
               </a>
             
           </div>
@@ -526,7 +526,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">13</span>
+                <span class="site-state-item-count">14</span>
                 <span class="site-state-item-name">posts</span>
               </a>
             </div>
@@ -537,7 +537,7 @@
             
             <div class="site-state-item site-state-categories">
               <a href="/categories/index.html">
-                <span class="site-state-item-count">6</span>
+                <span class="site-state-item-count">7</span>
                 <span class="site-state-item-name">categories</span>
               </a>
             </div>
