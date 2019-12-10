@@ -78,7 +78,7 @@
 <link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="keyword1, keyword2" />
+  <meta name="keywords" content="Hexo, NexT" />
 
 
 
@@ -94,18 +94,20 @@
 
 
 
-<meta name="description" content="some word here">
-<meta name="keywords" content="keyword1, keyword2">
+<meta name="description" content="This post will be a recap of how I did my assignment for tele3118 as a future reference.">
+<meta name="keywords" content="coding,gym,life,arsenal">
 <meta property="og:type" content="article">
-<meta property="og:title" content="template page">
-<meta property="og:url" content="http://yoursite.com/2014/04/05/template/index.html">
+<meta property="og:title" content="Socket Programming and simple REST api">
+<meta property="og:url" content="http://yoursite.com/2019/12/10/Socket-Programming-and-simple-REST-api/index.html">
 <meta property="og:site_name" content="相逢是缘">
-<meta property="og:description" content="some word here">
+<meta property="og:description" content="This post will be a recap of how I did my assignment for tele3118 as a future reference.">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-07-30T03:07:21.862Z">
+<meta property="og:image" content="http://yoursite.com/2019/12/10/Socket-Programming-and-simple-REST-api/05.png">
+<meta property="og:updated_time" content="2019-12-10T07:17:58.132Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="template page">
-<meta name="twitter:description" content="some word here">
+<meta name="twitter:title" content="Socket Programming and simple REST api">
+<meta name="twitter:description" content="This post will be a recap of how I did my assignment for tele3118 as a future reference.">
+<meta name="twitter:image" content="http://yoursite.com/2019/12/10/Socket-Programming-and-simple-REST-api/05.png">
 
 
 
@@ -134,13 +136,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2014/04/05/template/"/>
+  <link rel="canonical" href="http://yoursite.com/2019/12/10/Socket-Programming-and-simple-REST-api/"/>
 
 
 
 
 
-  <title>template page | 相逢是缘</title>
+  <title>Socket Programming and simple REST api | 相逢是缘</title>
   
 
 
@@ -273,7 +275,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2014/04/05/template/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/12/10/Socket-Programming-and-simple-REST-api/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Weisu Xiong">
@@ -290,7 +292,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">template page</h1>
+          <h1 class="post-title" itemprop="name headline">Socket Programming and simple REST api</h1>
         
 
         <div class="post-meta">
@@ -302,8 +304,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2014-04-05T00:00:00+08:00">
-                2014-04-05
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-12-10T14:30:30+08:00">
+                2019-12-10
               </time>
             
 
@@ -325,19 +327,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/cate1/" itemprop="url" rel="index">
-                    <span itemprop="name">cate1</span>
-                  </a>
-                </span>
-
-                
-                
-                  , 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/cate1/cate2/" itemprop="url" rel="index">
-                    <span itemprop="name">cate2</span>
+                  <a href="/categories/Coding/" itemprop="url" rel="index">
+                    <span itemprop="name">Coding</span>
                   </a>
                 </span>
 
@@ -353,7 +344,7 @@
 
           
           
-             <span id="/2014/04/05/template/" class="leancloud_visitors" data-flag-title="template page">
+             <span id="/2019/12/10/Socket-Programming-and-simple-REST-api/" class="leancloud_visitors" data-flag-title="Socket Programming and simple REST api">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -383,7 +374,7 @@
                   <span class="post-meta-item-text">Words count in article</span>
                 
                 <span title="Words count in article">
-                  2
+                  591
                 </span>
               
 
@@ -393,10 +384,6 @@
             </div>
           
 
-          
-              <div class="post-description">
-                  some word here
-              </div>
           
 
         </div>
@@ -412,8 +399,13 @@
       
 
       
-        <p>Content here</p>
-
+        <p>This post will be a recap of how I did my assignment for tele3118 as a future reference.<br><a id="more"></a><br>It is basically asks you to design a local server to display JSON data acquired from a remote server using UDP socket programming. </p>
+<p>I did the first part which is sokcet programming with ease as it only requires to pull a series of string from remote server. The only problem I met was initially the test server was written in python2 so that it won’t recognized the message from client but it was solved by modifying the python file of test server.</p>
+<p>For the second part it wasn’t as easy as google for a few examples. It consists of two task. First is to print out the list of names contained in the student list acquired from part one. Second is to design REST api for the user to pull specific student’s mark by entering the name.</p>
+<figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">@app.route(<span class="string">'/api/studentlist'</span>, methods=[<span class="string">'GET'</span>])</span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">get_tasks</span><span class="params">()</span></span><span class="symbol">:</span></span><br><span class="line">    <span class="keyword">return</span> jsonify(&#123;<span class="string">'names'</span>: student&#125;)</span><br><span class="line"></span><br><span class="line">@app.route(<span class="string">'/api/studentmark/&lt;string:search_name&gt;'</span>, methods=[<span class="string">'GET'</span>])</span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">get_task</span><span class="params">(search_name)</span></span><span class="symbol">:</span></span><br><span class="line">    b = [] <span class="comment">#empty list</span></span><br><span class="line">    <span class="keyword">for</span> name,mark <span class="keyword">in</span> Marks.items()<span class="symbol">:</span></span><br><span class="line">        <span class="keyword">if</span> name == <span class="symbol">search_name:</span></span><br><span class="line">            b.append(name)</span><br><span class="line">            b.append(mark)</span><br><span class="line">            <span class="keyword">return</span> jsonify(b)</span><br></pre></td></tr></table></figure>
+<p>It is quite self explanatory that if I typed localhost/api/studentlist, it will direct me to the page with all the names of students. And if I typed localhost/api/studentmark/Josh, it will show me the mark that associates with Josh.</p>
+<p>This assignment also consists of a bonus part where a front-end interface is required rather then the plain webpage. So I used a html example of someone else for the mark searching part. For the simplicity of this post, I will just post the html screen shot of the final web page.<br><img src="/2019/12/10/Socket-Programming-and-simple-REST-api/05.png"></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> flask <span class="keyword">import</span> Flask, request,render_template,url_for</span><br><span class="line"><span class="keyword">from</span> flask_restful <span class="keyword">import</span> Resource, Api</span><br><span class="line"><span class="keyword">from</span> json <span class="keyword">import</span> dumps</span><br><span class="line"><span class="keyword">from</span> flask <span class="keyword">import</span> jsonify</span><br><span class="line"><span class="keyword">import</span> sys</span><br><span class="line"><span class="keyword">from</span> importlib <span class="keyword">import</span> reload</span><br><span class="line"><span class="keyword">import</span> re</span><br><span class="line"><span class="keyword">import</span> json</span><br><span class="line"><span class="keyword">import</span> socket</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">reload(sys)</span><br><span class="line"><span class="comment">##sys.setdefaultencoding('utf8')</span></span><br><span class="line">client = socket.socket(socket.AF_INET,socket.SOCK_DGRAM) </span><br><span class="line">serverName = <span class="string">'149.171.37.161'</span></span><br><span class="line">serverPort = <span class="number">5000</span></span><br><span class="line">msg =  <span class="string">'studentmarklist'</span> + <span class="string">'\0'</span></span><br><span class="line">msg = msg.encode()</span><br><span class="line"></span><br><span class="line">client.sendto(msg,(serverName,serverPort))  </span><br><span class="line">response_msg,addr =client.recvfrom(<span class="number">1024</span>)</span><br><span class="line">msg_recv =response_msg.decode(<span class="string">'utf-8'</span>)</span><br><span class="line">client.close() </span><br><span class="line"></span><br><span class="line"><span class="comment">##TODO eliminate leading zero in marks</span></span><br><span class="line">msg_recv = msg_recv[<span class="number">4</span>:]</span><br><span class="line">msg_recv=re.split(<span class="string">'(\d+)'</span>,msg_recv)</span><br><span class="line">msg_recv_name = msg_recv[<span class="number">1</span>::<span class="number">2</span>]</span><br><span class="line">msg_recv_mark = msg_recv[::<span class="number">2</span>]</span><br><span class="line">msg_recv_mark = [s.strip(<span class="string">'\x00'</span>) <span class="keyword">for</span> s <span class="keyword">in</span> msg_recv_mark]</span><br><span class="line">msg_recv_mark = [s.lstrip(<span class="string">'0'</span>) <span class="keyword">for</span> s <span class="keyword">in</span> msg_recv_mark]</span><br><span class="line">zipbObj = zip(msg_recv_mark,msg_recv_name)</span><br><span class="line">dictOfMarklist = dict(zipbObj)</span><br><span class="line">Marks = dictOfMarklist</span><br><span class="line">print(json.dumps(Marks, indent=<span class="number">2</span>, separators=(<span class="string">', '</span>, <span class="string">': '</span>)))</span><br><span class="line">student = []</span><br><span class="line"><span class="keyword">for</span> key <span class="keyword">in</span> dictOfMarklist:</span><br><span class="line">    student.append(key)</span><br><span class="line"></span><br><span class="line"><span class="comment">#### FLASK</span></span><br><span class="line">app = Flask(__name__)</span><br><span class="line">api = Api(app)</span><br><span class="line"></span><br><span class="line"><span class="meta">@app.route('/api/studentlist', methods=['GET'])</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">get_tasks</span><span class="params">()</span>:</span></span><br><span class="line">    <span class="keyword">return</span> jsonify(&#123;<span class="string">'names'</span>: student&#125;)</span><br><span class="line"></span><br><span class="line"><span class="meta">@app.route('/api/studentmark/&lt;string:search_name&gt;', methods=['GET'])</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">get_task</span><span class="params">(search_name)</span>:</span></span><br><span class="line">    b = [] <span class="comment">#empty list</span></span><br><span class="line">    <span class="keyword">for</span> name,mark <span class="keyword">in</span> Marks.items():</span><br><span class="line">        <span class="keyword">if</span> name == search_name:</span><br><span class="line">            b.append(name)</span><br><span class="line">            b.append(mark)</span><br><span class="line">            <span class="keyword">return</span> jsonify(b)</span><br><span class="line"></span><br><span class="line"><span class="meta">@app.route('/')</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">helloworld</span><span class="params">()</span>:</span></span><br><span class="line">    <span class="comment">#result = jsonify(student)</span></span><br><span class="line">    STUDENTNAME = json.dumps(student, indent=<span class="number">2</span>, separators=(<span class="string">', '</span>, <span class="string">': '</span>))</span><br><span class="line">    <span class="keyword">return</span> render_template(<span class="string">'test1.html'</span>,data = STUDENTNAME,MARKS = Marks)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    app.run(debug=<span class="keyword">True</span>)</span><br></pre></td></tr></table></figure>
       
     </div>
     
@@ -437,15 +429,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2018/12/29/some-useful-linux-commands-for-servers/" rel="next" title="some useful linux commands for servers">
+                <i class="fa fa-chevron-left"></i> some useful linux commands for servers
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/07/06/first-post/" rel="prev" title="A Great First Post">
-                A Great First Post <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
