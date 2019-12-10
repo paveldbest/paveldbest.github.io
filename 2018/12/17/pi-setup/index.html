@@ -102,7 +102,7 @@
 <meta property="og:site_name" content="相逢是缘">
 <meta property="og:description" content="kali,linux,pi">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-12-29T15:30:05.953Z">
+<meta property="og:updated_time" content="2019-01-08T10:04:38.542Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="pi setup">
 <meta name="twitter:description" content="kali,linux,pi">
@@ -372,7 +372,7 @@
                   <span class="post-meta-item-text">Words count in article</span>
                 
                 <span title="Words count in article">
-                  70
+                  105
                 </span>
               
 
@@ -403,7 +403,8 @@
       
         <p>just for personal records<br><a id="more"></a></p>
 <h2 id="pi-sd-card-issue"><a href="#pi-sd-card-issue" class="headerlink" title="pi sd card issue"></a>pi sd card issue</h2><p>This issue was raised coz when I do <code>apt-get update</code>, it said my /root was 100% used.<br>Previously not all 32G on my sd card were partioned. So as followed steps from this <a href="https://www.jianshu.com/p/6588f935d41c" target="_blank" rel="noopener">Alicefeng</a>.<br>I could use all my 32G eventually. Though I have some issues with understand linux file system as always. Understand this won’t be a top priority.</p>
-<p>## </p>
+<h2 id="timezone"><a href="#timezone" class="headerlink" title="timezone"></a>timezone</h2><p>for ubuntu/debian<br><code>sudo dpkg-reconfigure tzdata</code></p>
+<p>else show all timezone info <code>ls /usr/share/zoneinfo/</code> and do <code>sudo unlink /etc/localtime</code> plus <code>sudo ln -s /usr/share/zoneinfo/Etc/GMT+6 /etc/localtime</code></p>
 
       
     </div>
@@ -565,7 +566,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#pi-sd-card-issue"><span class="nav-number">1.</span> <span class="nav-text">pi sd card issue</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#pi-sd-card-issue"><span class="nav-number">1.</span> <span class="nav-text">pi sd card issue</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#timezone"><span class="nav-number">2.</span> <span class="nav-text">timezone</span></a></li></ol></div>
             
 
           </div>
@@ -593,7 +594,7 @@
         <div class="copyright" >
   
   &copy;  2017 - 
-  <span itemprop="copyrightYear">2018</span>
+  <span itemprop="copyrightYear">2019</span>
   <span class="with-love">
     <i class="fa fa-user-secret"></i>
   </span>
